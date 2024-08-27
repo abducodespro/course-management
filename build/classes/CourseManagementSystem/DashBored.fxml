@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" styleClass="back" stylesheets="@design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CourseManagementSystem.DashBoredController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="632.0" prefWidth="342.0" stylesheets="@design.css">
+         <children>
+            <FontAwesomeIcon glyphName="BOOK" layoutX="143.0" layoutY="77.0" size="5em" />
+            <Label layoutX="110.0" layoutY="111.0" text="WELCOME TO">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="144.0" text="COURSE MANAGEMENT SYSTEM">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="17.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="170.0" layoutY="188.0" startX="-100.0" />
+            <FontAwesomeIcon glyphName="DASHBOARD" layoutX="42.0" layoutY="303.0" size="3em" text="" />
+            <FontAwesomeIcon glyphName="LIST" layoutX="42.0" layoutY="370.0" size="3em" />
+            <FontAwesomeIcon glyphName="SEARCH" layoutX="43.0" layoutY="436.0" size="3em" />
+            <Button fx:id="btn_about" layoutX="97.0" layoutY="337.0" mnemonicParsing="false" onAction="#swich" prefHeight="42.0" prefWidth="203.0" text="About us">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_help" layoutX="97.0" layoutY="403.0" mnemonicParsing="false" onAction="#swich" prefHeight="42.0" prefWidth="203.0" text="Help">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="manage_btn" layoutX="97.0" layoutY="268.0" mnemonicParsing="false" onAction="#swich" prefHeight="42.0" prefWidth="203.0" text="Manage">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="bback" />
+            <String fx:value="back" />
+         </styleClass>
+      </AnchorPane>
+      <BorderPane fx:id="manage_brdr" layoutX="369.0" layoutY="6.0" prefHeight="632.0" prefWidth="825.0" styleClass="bback" stylesheets="@design.css">
+         <center>
+            <AnchorPane prefHeight="507.0" prefWidth="664.0" styleClass="background2" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_students" layoutX="361.0" layoutY="243.0" mnemonicParsing="false" onAction="#ManageStudent" prefHeight="42.0" prefWidth="203.0" text="Manage Students">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="336.0" layoutY="145.0" text="Choose a field to manage">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_Teachers" layoutX="361.0" layoutY="322.0" mnemonicParsing="false" onAction="#ManageTeachers" prefHeight="42.0" prefWidth="203.0" text="Manage Teachers">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_courses" layoutX="361.0" layoutY="396.0" mnemonicParsing="false" onAction="#ManageCourse" prefHeight="42.0" prefWidth="203.0" text="Manage Courses">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon glyphName="DASHBOARD" layoutX="300.0" layoutY="276.0" size="3em" />
+                  <FontAwesomeIcon glyphName="DASHBOARD" layoutX="300.0" layoutY="355.0" size="3em" />
+                  <FontAwesomeIcon glyphName="DASHBOARD" layoutX="300.0" layoutY="429.0" size="3em" />
+                  <Line endX="57.0" layoutX="461.0" layoutY="184.0" startX="-100.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <Separator layoutX="356.0" layoutY="18.0" opacity="0.61" orientation="VERTICAL" prefHeight="615.0" prefWidth="5.0" />
+      <BorderPane fx:id="about_brdr" layoutX="369.0" layoutY="6.0" prefHeight="632.0" prefWidth="825.0" stylesheets="@design.css" visible="false">
+         <center>
+            <AnchorPane prefHeight="507.0" prefWidth="664.0" style="-fx-background-color: #fc5757; -fx-background-radius: 15px;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="98.0" layoutY="264.0" prefHeight="24.0" prefWidth="631.0" text="we are interested to prepare this project for adminstrators and heads to">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Line endX="57.0" layoutX="434.0" layoutY="251.0" startX="-100.0" />
+                  <Label layoutX="92.0" layoutY="128.0" text="Label" textFill="#fc5757" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="338.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="79.0" layoutY="288.0" prefHeight="24.0" prefWidth="668.0" text="make it more flexible the way in knowing students, teachers and courses easly.">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="340.0" prefHeight="24.0" prefWidth="701.0" text="It gives very important information about the numbers and the status of students">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="115.0" layoutY="316.0" prefHeight="24.0" prefWidth="623.0" text="It have very useful tools to manage students, teachers and courses.">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="311.0" layoutY="364.0" prefHeight="24.0" prefWidth="203.0" text="teachers and courses.">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="help_brdr1" layoutX="369.0" layoutY="6.0" prefHeight="632.0" prefWidth="825.0" styleClass="bback" stylesheets="@design.css" visible="false">
+         <center>
+            <AnchorPane prefHeight="507.0" prefWidth="664.0" stylesheets="@design.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="185.0" layoutY="272.0" prefHeight="24.0" prefWidth="452.0" text="know how to use this program here are some hints:-">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon glyphName="LIST" layoutX="117.0" layoutY="359.0" size="2em" />
+                  <FontAwesomeIcon glyphName="LIST" layoutX="117.0" layoutY="443.0" size="2em" />
+                  <Label layoutX="110.0" layoutY="242.0" prefHeight="24.0" prefWidth="602.0" text="Hi, if you are confused what to do with this program or if you want to ">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="158.0" layoutY="339.0" prefHeight="24.0" prefWidth="642.0" text="you can choose 'manage' button to see informations about students,">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="158.0" layoutY="369.0" prefHeight="24.0" prefWidth="642.0" text="teachers and coureses.you can also add, delete and update there.">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="158.0" layoutY="422.0" prefHeight="24.0" prefWidth="520.0" text="you can also click the button 'about us' to know more about">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="158.0" layoutY="446.0" prefHeight="24.0" prefWidth="520.0" text="the program and it utility.">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="backk" />
+                  <String fx:value="back" />
+               </styleClass>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

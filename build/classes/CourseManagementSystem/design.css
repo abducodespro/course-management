@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 16, 2023, 5:01:38 AM
+    Author     : Nurusan
+*/
+.background{
+    -fx-background-color: #350c9e;
+}
+.background2{
+    -fx-background-color: #ab93ee;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 10px;
+}
+.textfield{
+    -fx-background-color: #f8fcfc;
+    -fx-background-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right,#241de8,#e51e3c);
+    -fx-border-radius:15px;
+    -fx-border-width:1.5px;
+    
+}
+.button{
+    -fx-background-color: #30363f;
+    -fx-background-radius: 20;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-background-color: #4de8e8;
+}
+.background3{
+    -fx-background-color: #8ea7e1;
+}
+.back{
+    -fx-background-color:linear-gradient(to bottom right,#eb7126,#b9eb28);
+}
+.backk{
+    -fx-background-color:#a0f5a3;
+    -fx-border-color:linear-gradient(to bottom right,#eb7126,#b9eb28);
+    }
+.bback{
+     -fx-border-color: #8ea7e1;
+     -fx-background-radius: 10px;
+     -fx-border-radius: 10px; 
+     -fx-border-width:2px;
+    }
+
+
+
